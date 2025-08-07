@@ -5,7 +5,6 @@
 ![screen shot of imap2eml showing settings dialog](./resources/screenshot1.png "Settings Dialog")
 ![screen shot of imap2eml showing fetched emails](./resources/screenshot2.png "Fetched Emails")
 
-
 ---
 
 ## Features
@@ -16,7 +15,20 @@
 
 ---
 
-## Installation
+## Download
+
+If you'd like to download the latest Windows executable version of Imap2Eml, you can do so [here](https://github.com/afifs/Imap2Eml/releases/latest).
+
+- Windows: [imap2eml.exe](https://github.com/afifs/imap2eml/releases/download/v1.0.0/imap2eml.exe)
+- Or download the zipped version: [imap2eml.zip](https://github.com/afifs/imap2eml/releases/download/v1.0.0/imap2eml.zip)
+
+> No installation required — just double-click the icon to run.
+> 
+![App Icon](./resources/icon.png "imap2eml App Icon")
+
+---
+
+## Installation from Source
 
 ### 1. Clone the repo
 

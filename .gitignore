@@ -44,3 +44,4 @@ archive/
 .coverage
 htmlcov/
 .cache/
+/dist/
