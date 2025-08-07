@@ -1,0 +1,53 @@
+# .gitignore
+archive
+build
+dist
+downloads
+test_env
+
+# Bytecode and cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+.env/
+venv/
+test_env/
+
+# Build artifacts
+build/
+dist/
+*.spec
+*.egg-info/
+*.manifest
+*.dll
+*.so
+
+# Installer logs
+pip-log.txt
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# IDE-specific
+.vscode/
+.idea/
+
+# App-specific
+settings.dat
+downloads/
+archive/
+*.log
+
+# PyInstaller output
+*.exe
+*.bin
+*.pkg
+*.app
+
+# Test artifacts
+.coverage
+htmlcov/
+.cache/

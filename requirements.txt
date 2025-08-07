@@ -1,0 +1,5 @@
+PyQt5>=5.15.9                # GUI framework for desktop interface
+beautifulsoup4>=4.12.2       # HTML email parsing
+cryptography>=41.0.3         # Secure encryption and credential management
+
+

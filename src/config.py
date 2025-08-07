@@ -1,0 +1,5 @@
+# config.py
+
+DEFAULT_DATE_RANGE_DAYS = 3
+DOWNLOAD_FOLDER = "downloads"
+IMAP_TIMEOUT = 30

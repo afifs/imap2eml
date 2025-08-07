@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head><title>Select Emails</title></head>
+<body>
+  <h2>Select emails to save:</h2>
+  <form method="POST">
+    {% for email in emails %}
+      <label>
+        <input type="checkbox" name="selected" value="{{ email.id }}">
+         <strong>{{ email.subject or '(No Subject)' }}</strong> from {{ email.from }}
+      </label><br><br>
+    {% endfor %}
+    <button type="submit"> Save Selected</button>
+  </form>
+</body>
+</html>
