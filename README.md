@@ -1,6 +1,7 @@
 # Imap2Eml
 
 **Imap2Eml** is a desktop tool built with PyQt5 that connects to your IMAP Mail account, lists emails since selected days before until now, with from and to email filters, and lets you selectively export them as `.eml` files — complete with attachments and metadata.
+
 ![screen shot of imap2eml showing settings dialog](./resources/screenshot1.png "Settings Dialog")
 ![screen shot of imap2eml showing fetched emails](./resources/screenshot2.png "Fetched Emails")
 
@@ -35,7 +36,7 @@ pip install -r requirements.txt
 To build a standalone `.exe` using PyInstaller:
 
 ```bash
-pyinstaller src/main.py --noconfirm --windowed --onefile --icon=resources/icon.ico ^
+pyinstaller src/iamp2eml.py --noconfirm --windowed --onefile --icon=resources/icon.ico ^
   --add-data "resources/style.qss;resources" ^
   --add-data "resources/logo.png;resources" ^
   --add-data "resources/icons;resources/icons"

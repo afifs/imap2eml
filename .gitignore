@@ -1,9 +1,4 @@
 # .gitignore
-archive
-build
-dist
-downloads
-test_env
 
 # Bytecode and cache
 __pycache__/
@@ -17,7 +12,6 @@ test_env/
 
 # Build artifacts
 build/
-dist/
 *.spec
 *.egg-info/
 *.manifest
@@ -42,7 +36,6 @@ archive/
 *.log
 
 # PyInstaller output
-*.exe
 *.bin
 *.pkg
 *.app

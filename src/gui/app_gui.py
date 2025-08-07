@@ -1,3 +1,5 @@
+# app_gui.py
+
 from PyQt5.QtWidgets import (
     QWidget, QVBoxLayout, QHBoxLayout, QPushButton, QLabel,
     QListWidget, QListWidgetItem, QMessageBox, QCheckBox
@@ -65,9 +67,9 @@ class EmailSaverApp(QWidget):
         self.fetch_button = QPushButton(" Fetch Emails")
         self.save_button = QPushButton(" Save Selected Emails")
 
-        self.icon_fetch = QIcon(resource_path('../../resources/icons/move_to_inbox_icon.svg'))
-        self.icon_save = QIcon(resource_path('../../resources/icons/archive_icon.svg'))
-        self.icon_settings = QIcon(resource_path('../../resources/icons/settings_icon.svg'))
+        self.icon_fetch = QIcon(resource_path('resources/icons/move_to_inbox_icon.svg'))
+        self.icon_save = QIcon(resource_path('resources/icons/archive_icon.svg'))
+        self.icon_settings = QIcon(resource_path('resources/icons/settings_icon.svg'))
         self.fetch_button.setIcon(self.icon_fetch)
         self.fetch_button.setIconSize(QSize(32, 32))
         self.settings_button.setIcon(self.icon_settings)
@@ -116,7 +118,7 @@ class EmailSaverApp(QWidget):
         main_layout.addLayout(status_layout)
 
         #  Styling
-        with open(resource_path("../gui/style.qss"), "r") as f:
+        with open(resource_path("src/gui/style.qss"), "r") as f:
             self.setStyleSheet(f.read())
 
     def open_settings(self):
@@ -159,7 +161,7 @@ class EmailSaverApp(QWidget):
             item = QListWidgetItem()
             item.setFlags(Qt.ItemIsUserCheckable | Qt.ItemIsEnabled | Qt.ItemIsSelectable)
             item.setCheckState(Qt.Unchecked)
-            self.icon_mail = QIcon(resource_path('../../resources/icons/mail_icon.svg'))
+            self.icon_mail = QIcon(resource_path('resources/icons/mail_icon.svg'))
             subject = email.get("subject") or "(No Subject)"
             item.setIcon(self.icon_mail)
             item.setText(f"{subject} | From: {email['from']}")

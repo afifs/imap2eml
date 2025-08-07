@@ -59,7 +59,7 @@ class SettingsDialog(QDialog):
         self.days_input.setPlaceholderText("Number of days to fetch")
         layout.addWidget(self.days_input)
 
-        self.icon_save = QIcon(resource_path('../../resources/icons/save_icon.svg'))
+        self.icon_save = QIcon(resource_path('resources/icons/save_icon.svg'))
         save_btn = QPushButton("Save Settings")
         save_btn.setIcon(self.icon_save)
         save_btn.setIconSize(QSize(32, 32))
